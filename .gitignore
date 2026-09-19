@@ -161,6 +161,14 @@ data_loader_all.py
 
 checkpoints/
 results/
+analysis_outputs/
+experiment_logs/
+external_backbones/
+foundation_models/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
 result_long_term_forecast.txt
 result_anomaly_detection.txt
 scripts/augmentation/

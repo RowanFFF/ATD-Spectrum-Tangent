@@ -40,6 +40,9 @@ class EarlyStopping:
         self.delta = delta
 
     def __call__(self, val_loss, model, path):
+        if not np.isfinite(val_loss):
+            raise FloatingPointError(
+                f'non-finite validation loss: {val_loss}')
         score = -val_loss
         if self.best_score is None:
             self.best_score = score

@@ -1,0 +1,9 @@
+-r requirements.txt
+
+# Optional dependencies for named transfer parents. Their model checkpoints
+# and any external Timer source tree are intentionally not redistributed.
+transformers==4.57.3
+safetensors>=0.5.3,<1
+# TimesFM 2.5 is loaded from an explicit source checkout, not the old 1.x wheel.
+# See FOUNDATION_MODELS.md. The PyTorch adapter does not require JAX.
+jaxtyping==0.3.4
