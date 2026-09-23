@@ -1,7 +1,7 @@
 # ATD + Spectrum Tangent
 
-论文 **One Patch, Three Roles: What Is Actually Coupled in Autoregressive Time-Series Forecasting?**
-的代码实现。
+论文 [**One Patch, Three Roles: What Is Actually Coupled in Autoregressive Time-Series Forecasting?**](https://arxiv.org/abs/2609.23686)
+（arXiv:2609.23686）的代码实现。
 
 我们研究自回归时序预测中 patch 的表示、预测转移和执行角色。
 ATD 用冻结父模型的递归轨迹训练并行出口；Spectrum Tangent 用训练集选择的周期历史方向修正预测。
@@ -22,7 +22,7 @@ Atomic encoding 通过共享的小尺度原子编码与按时间顺序拼接，�
 建议 Python 3.11 或更新版本，使用独立环境。根据机器选择合适的 PyTorch CPU/CUDA wheel。
 
 ```bash
-git clone https://github.com/sspa131101-dev/ATD-Spectrum-Tangent.git
+git clone https://github.com/RowanFFF/ATD-Spectrum-Tangent.git
 cd ATD-Spectrum-Tangent
 
 python -m venv .venv
